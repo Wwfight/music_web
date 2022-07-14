@@ -1,0 +1,47 @@
+:root{
+  --bg-color: #f2f2f2;
+  --text-normal-color: #333;
+  --text-dec-color: #4d4d4d;
+  --scrollbar-bg: #333;
+  --el-color-primary: #333!important;
+  --el-text-color-primary: #8d8d8d !important;
+}
+.el-slider {
+  --el-slider-button-size: 14px!important;
+  --el-slider-time-button: 8px!important;
+}
+.el-drawer{
+  background-color: transparent!important;
+  color: var(--text-normal-color);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg-color: #252526;
+    --text-normal-color: #fff;
+    --text-dec-color: #afafaf;
+    --scrollbar-bg: #787878;
+    --el-color-primary: #7beccb !important;
+    --el-text-color-primary: #8d8d8d !important;
+    --color-navbar-bg: rgba(34,34,34,0.8);
+  }
+}
+
+// 全局滚动条样式
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(239, 239, 239, 0);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(239, 239, 239, 0);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-bg);
+}

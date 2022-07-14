@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "al-icon"; /* Project id 3509457 */
+  src: url('iconfont.woff?t=1657272534686') format('woff');
+}
+
+.al-icon {
+  font-family: "al-icon" !important;
+  font-size: 14px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-laba:before {
+  content: "\e629";
+}
+
+.icon-muted:before {
+  content: "\e62a";
+}
+
+.icon-zt:before {
+  content: "\e616";
+}
+
+.icon-like:before {
+  content: "\e86f";
+}
+
+.icon-danqu:before {
+  content: "\e66d";
+}
+
+.icon-next:before {
+  content: "\e76d";
+}
+
+.icon-prev:before {
+  content: "\e76e";
+}
+
+.icon-play:before {
+  content: "\e62b";
+}
+
+.icon-sjbf:before {
+  content: "\e6a0";
+}
+
+.icon-xh:before {
+  content: "\e68d";
+}
+
+.icon-music-list:before {
+  content: "\e716";
+}
+

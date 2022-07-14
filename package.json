@@ -7,8 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.6",
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "dayjs": "^1.11.3",
     "element-plus": "^2.2.8",
+    "howler": "^2.2.3",
+    "mitt": "^3.0.0",
+    "reseter.css": "^2.0.0",
+    "url-loader": "^2.3.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
@@ -19,6 +26,12 @@
     "@vue/cli-plugin-vuex": "~4.5.9",
     "@vue/cli-service": "~4.5.9",
     "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-vue": "^7.9.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
   }

@@ -1,0 +1,28 @@
+//  覆盖element-plus样式
+
+.el-tabs__item.is-active{
+  font-size: var(--el-font-size-large);
+  font-weight: bold;
+}
+
+.el-tabs__nav-wrap::after{
+  content: none!important;
+}
+
+.el-tabs__content{
+
+}
+
+.list-drawer{
+  backdrop-filter: saturate(180%) blur(40px);
+  .el-drawer{
+    &__header{
+      margin-bottom: 10px;
+    }
+    &__title{
+      font-size: 20px;
+      color: #8cd6ff;
+      font-weight: bold;
+    }
+  }
+}
