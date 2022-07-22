@@ -100,6 +100,10 @@
     proxy.$mitt.emit('playSong',data.tracks[0].id)
   }
   const handlePlaySound = (item)=>{
+    store.commit('updateStateValue',{
+      key: 'tracks',
+      value: data.tracks
+    })
     proxy.$mitt.emit('playSong',item.id)
   }
 

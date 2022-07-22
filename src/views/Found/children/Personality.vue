@@ -6,7 +6,7 @@
             </el-carousel-item>
         </el-carousel>
     </div>
-    <h3 class="con-title">推荐歌单 <ArrowRight style="width: 1.5rem;height: 1.5rem;margin-left: 0.5rem;position:relative;top: 3px;"/></h3>
+    <h3 class="con-title" @click="router.push({name: 'songList'})">推荐歌单 <ArrowRight style="width: 1.5rem;height: 1.5rem;margin-left: 0.5rem;position:relative;top: 3px;"/></h3>
     <ul class="personalized section">
         <div v-for="item in data.personalized" :key="item.id">
             <li class="personalized-item" @click="handlePlayHot(item)">

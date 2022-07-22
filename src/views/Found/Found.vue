@@ -2,8 +2,8 @@
   <div class="home">
     <el-tabs v-model="data.activeName" class="demo-tabs" @tab-click="handleClick">
       <el-tab-pane v-for="item in data.tabs" :key="item.route" :label="item.name" :name="item.route">
-        <router-view/>
       </el-tab-pane>
+      <router-view/>
     </el-tabs>
   </div>
 </template>

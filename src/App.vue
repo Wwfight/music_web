@@ -18,6 +18,7 @@ ul{
 }
 body, html{
   overflow: hidden;
+  font-size: 12px;
 }
 #app {
   font-family: Barlow,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif,microsoft uighur;

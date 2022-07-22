@@ -123,15 +123,22 @@
       switch (data.playType) {
         case 2:
           const shuffle = shuffleArr(toRaw(tracks.value))
-          handlePlay(shuffle[0].id)
+          handlePlay(shuffle[0].id, 'prev')
           break
         default:
           data.playIndex--
-          handlePlay(toRaw(tracks.value)[data.playIndex].id)
+          handlePlay(toRaw(tracks.value)[data.playIndex].id, 'prev')
       }
     }
     const handleNext = ()=>{
       const index = toRaw(tracks.value).findIndex(i=>i.id === data.playId)
+      if(toRaw(tracks.value).length <= 1){
+        ElMessage({
+          message: '播放列表里没歌啦~，再添加几首吧',
+          type: 'warning',
+        })
+        return
+      }
       if(index === tracks.value.length){
         data.playIndex = -1
       }
@@ -168,7 +175,7 @@
         data.currentTime = data.sound.seek()
       },1000)
     }
-    const handlePlay = (id)=>{
+    const handlePlay = (id, type)=>{
       if(data.sound && !data.sound.playing() && data.playId===id){
         data.sound.play()
         data.play = true
@@ -188,6 +195,10 @@
             message: '暂无版权~',
             type: 'warning',
           })
+          if(type === 'prev'){
+            handlePrev()
+            return
+          }
           handleNext()
           return
         }
@@ -270,7 +281,7 @@
       top: 0;
       left: 0;
       height: 2px;
-      ::v-deep .el-slider{
+      :deep .el-slider{
         &__button-wrapper{
           height: 32px;
         }
@@ -290,7 +301,7 @@
         display: flex;
         height: 70%;
         &_img{
-            width: 60px;
+            width: 55px;
             margin: 0 15px;
             border-radius: 5px;
             box-shadow: 0 6px 8px -2px rgb(0 0 0 / 16%);
