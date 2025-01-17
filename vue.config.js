@@ -8,6 +8,5 @@ let resolve = dir => {
 
 module.exports = {
   lintOnSave: false,
-  publicPath: process.env.NODE_ENV === 'production' ? '/music/' : '/',
-  outputDir: 'D:\\music'
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 }

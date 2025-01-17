@@ -11,8 +11,8 @@
 </template>
 <script></script>
 <style lang="scss">
-@import "assets/css/public";
-@import "assets/css/element";
+@use "assets/css/public";
+@use "assets/css/element";
 ul{
   list-style: none;
 }
