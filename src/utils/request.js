@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 const service = axios.create({
-  // baseURL: 'https://musicapi.benwang.wang',
-  baseURL: 'http://58.210.98.62:8090/musicApi',
+  baseURL: 'https://netease-cloud-music-api-chi-teal.vercel.app/',
+  // baseURL: 'http://58.210.98.62:8090/musicApi',
   timeout: 60000
 })
 
